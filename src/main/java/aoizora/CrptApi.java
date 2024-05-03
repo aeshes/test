@@ -357,12 +357,12 @@ public class CrptApi
 
         private int total;
 
-        FrequencyCounter(long interval, TimeUnit unit)
+        public FrequencyCounter(long interval, TimeUnit unit)
         {
             this(interval, unit, 16);
         }
 
-        FrequencyCounter(long interval, TimeUnit unit, int precision)
+        public FrequencyCounter(long interval, TimeUnit unit, int precision)
         {
             monitoringInterval = unit.toMillis(interval);
 
