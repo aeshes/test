@@ -457,13 +457,13 @@ public class CrptApi
 
         Description description = new Description("1234567890");
 
-        Product product1 = new Product("cert1", "2023-07-27", "123", "owner1", "producer1", "2023-07-27", "tnved1", "uit1", "uitu1");
-        Product product2 = new Product("cert2", "2023-07-28", "456", "owner2", "producer2", "2023-07-28", "tnved2", "uit2", "uitu2");
+        Product product1 = new Product("cert1", "2024-05-03", "123", "owner1", "producer1", "2024-05-03", "tnved1", "uit1", "uitu1");
+        Product product2 = new Product("cert2", "2024-05-03", "456", "owner2", "producer2", "2024-05-03", "tnved2", "uit2", "uitu2");
         List<Product> products = new ArrayList<>();
         products.add(product1);
         products.add(product2);
 
-        Document document = new Document(description, "doc123", "approved", "type1", true, "owner_inn", "participant_inn", "producer_inn", "2023-07-27", "type2", products, "2023-07-27", "reg123");
+        Document document = new Document(description, "doc123", "approved", "type1", true, "owner_inn", "participant_inn", "producer_inn", "2024-05-03", "type2", products, "2024-05-03", "reg123");
         String signature = "<Открепленная подпись в base64>";
 
         for (int i = 0; i < 10; ++i)
